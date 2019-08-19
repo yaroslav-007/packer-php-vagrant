@@ -41,6 +41,10 @@ rbenv init
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 source ~/.bash_profile
 ```
+
+On Windows:
+Install accordingly to https://rubyinstaller.org/
+
 ## How to run the code
 
 
