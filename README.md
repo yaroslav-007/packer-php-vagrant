@@ -58,8 +58,9 @@ source ~/.bash_profile
 ## Start vagrant:
 
     packer build bionic64.json
+ 
 
-When 
+When done file named bionic64-vbox.box will be generated.
 
 ## Kitchen test
 ### Pre-requirements
@@ -118,4 +119,3 @@ You should get:
     Test Summary: 11 successful, 0 failures, 0 skipped
            Finished verifying <default-vbox-bionic64> (0m1.06s).
     -----> Kitchen is finished. (0m2.23s)
-
