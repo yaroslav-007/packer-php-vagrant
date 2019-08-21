@@ -14,3 +14,4 @@ priv/
 Gemfile.lock
 .ruby-version
 .DS_Store
+vagrant-test/

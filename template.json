@@ -1,7 +1,6 @@
 {
   "variables": {
-    "name": "kikitux/bionic64",
-    "build_name": "bionic64",
+    "build_name": "bionic64-php",
     "build_cpu_cores": "2",
     "build_memory": "2048",
     "disk_size": "204800",
@@ -76,22 +75,10 @@
     {
       "execute_command": "echo 'vagrant' | {{.Vars}} sudo -H -E -S bash '{{.Path}}'",
       "expect_disconnect": true,
-      "script": "./scripts/packages.sh",
-      "type": "shell"
-    },
-    {
-      "execute_command": "echo 'vagrant' | {{.Vars}} sudo -H -E -S bash '{{.Path}}'",
-      "script": "./scripts/vagrant.sh",
-      "type": "shell"
-    },
-    {
-      "execute_command": "echo 'vagrant' | {{.Vars}} sudo -H -E -S bash '{{.Path}}'",
-      "script": "./scripts/install-nginx-php.sh",
-      "type": "shell"
-    },
-    {
-      "execute_command": "echo 'vagrant' | {{.Vars}} sudo -H -E -S bash '{{.Path}}'",
       "scripts": [
+        "./scripts/packages.sh",
+        "./scripts/vagrant.sh",
+        "./scripts/install-nginx-php.sh",
         "./scripts/virtualbox.sh",
         "./scripts/virtualbox_cleanup.sh",
         "./scripts/zero.sh"

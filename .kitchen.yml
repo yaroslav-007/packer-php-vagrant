@@ -6,9 +6,9 @@ provisioner:
   name: shell
 
 platforms:
-  - name: vbox/bionic64
+  - name: vbox/bionic64-php
     driver:
-      box: bionic64
+      box: bionic64-php
       provider: virtualbox
 
 verifier:

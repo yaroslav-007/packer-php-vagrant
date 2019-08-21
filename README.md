@@ -93,6 +93,7 @@ bundle exec kitchen destroy
 
 You should get:
 
+```
     -----> Starting Kitchen (v1.23.2)
     -----> Verifying <default-vbox-bionic64>...
            Loaded tests from {:path=>".home.hpeymark.packer-php-vagrant.test.integration.default"} 
@@ -123,3 +124,9 @@ You should get:
     Test Summary: 11 successful, 0 failures, 0 skipped
            Finished verifying <default-vbox-bionic64> (0m1.06s).
     -----> Kitchen is finished. (0m2.23s)
+```
+
+## Publish to Vagrant Cloud
+```
+vagrant cloud publish vatman/bionic64-php 0.0.1 virtualbox bionic64-php-vbox.box --release --force
+```

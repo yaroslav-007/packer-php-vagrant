@@ -28,6 +28,6 @@ describe service('nginx') do
   it { should be_running }
 end
 
-describe file('/etc/nginx/sites-enabled/default') do
-  it { should_not exist }
+describe http("http://localhost") do
+  its('status') { should cmp 200 }
 end
