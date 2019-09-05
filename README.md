@@ -1,7 +1,7 @@
 
 
-# Simple vagrant
-This is project that runs simple php web page via vagrant.
+# Simple packer code that build a vagrant box
+This is packer code that build a vagrant box image for running simple web php code.
 
 ## Pre-requirements
 
